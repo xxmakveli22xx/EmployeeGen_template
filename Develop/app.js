@@ -141,8 +141,8 @@ function startMenu(){
       },
       {
         type: "input",
-        name: "engineerOfficeNumber",
-        message: "What is your engineer's office number?",
+        name: "gitHub",
+        message: "What is your engineer's gitHub id?",
         
       }
     ]).then(answers => {
@@ -179,8 +179,8 @@ function startMenu(){
       },
       {
         type: "input",
-        name: "internOfficeNumber",
-        message: "What is your intern's office number?",
+        name: "school",
+        message: "What is your intern's school?",
         
       }
     ]).then(answers => {
@@ -192,6 +192,10 @@ function startMenu(){
 
    };
    addManager();
+
+   
+   
+   
 };
 
 startMenu();
