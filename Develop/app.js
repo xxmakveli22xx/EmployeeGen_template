@@ -119,11 +119,76 @@ function startMenu(){
    };
    
    function addEngineer() {
+    console.log("Please build your team");
+    inquirer.prompt([
+      {
+        type: "input",
+        name: "engineerName",
+        message: "What is your engineer's name?",
+        
+      },
+      {
+        type: "input",
+        name: "engineerId",
+        message: "What is your engineer's id?",
+        
+      },
+      {
+        type: "input",
+        name: "engineerEmail",
+        message: "What is your engineer's email?",
+        
+      },
+      {
+        type: "input",
+        name: "engineerOfficeNumber",
+        message: "What is your engineer's office number?",
+        
+      }
+    ]).then(answers => {
+      const engineer = new Engineer(answers.engineerName, answers.enginnerId, answers.engineerEmail, answers.engineerOfficeNumber);
+      team.push(engineer);
+      idArray.push(answers.engineerId);
+      makeTeam();
+    });
+
+
        
    };
 
    function addIntern(){
-
+    console.log("Please build your team");
+    inquirer.prompt([
+      {
+        type: "input",
+        name: "internName",
+        message: "What is your intern's name?",
+        
+      },
+      {
+        type: "input",
+        name: "internId",
+        message: "What is your intern's id?",
+        
+      },
+      {
+        type: "input",
+        name: "internEmail",
+        message: "What is your intern's email?",
+        
+      },
+      {
+        type: "input",
+        name: "internOfficeNumber",
+        message: "What is your intern's office number?",
+        
+      }
+    ]).then(answers => {
+      const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internOfficeNumber);
+      team.push(intern);
+      idArray.push(answers.internId);
+      makeTeam();
+    });
 
    };
    addManager();
