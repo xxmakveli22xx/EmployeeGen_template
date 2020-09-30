@@ -57,7 +57,7 @@ function startMenu(){
           "Engineer",
           "Intern",
           "Manager",
-          "No more please"
+          "Completely Finished"
         ]
       }
     ]).then(function(userChoice){

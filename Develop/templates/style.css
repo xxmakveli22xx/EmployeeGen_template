@@ -1,3 +1,17 @@
 body{
     background-color: black;
 }
+
+.eng-Header {
+     background-color: crimson;
+}
+
+.intern-Header {
+
+    background-color: royalblue;
+}
+
+.man-header{
+
+    background-color: orange;
+}
