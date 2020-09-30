@@ -146,7 +146,7 @@ function startMenu(){
         
       }
     ]).then(answers => {
-      const engineer = new Engineer(answers.engineerName, answers.enginnerId, answers.engineerEmail, answers.engineerOfficeNumber);
+      const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.gitHub);
       team.push(engineer);
       idArray.push(answers.engineerId);
       makeTeam();
@@ -184,7 +184,7 @@ function startMenu(){
         
       }
     ]).then(answers => {
-      const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internOfficeNumber);
+      const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.school);
       team.push(intern);
       idArray.push(answers.internId);
       makeTeam();
