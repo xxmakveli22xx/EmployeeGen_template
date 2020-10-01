@@ -56,4 +56,4 @@ https://youtu.be/mbbRWIfXslU
 
 ## ScreenShots
 
-<img src="/screenshots/ss1.png">
+<img src="/ScreenShots/SS1.png">
